@@ -1,0 +1,108 @@
+* {
+     box-sizing: border-box;
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+     
+}
+
+.row > p {
+    width: 30%;
+    height: auto;
+    background-color: rgb(229, 157, 157);
+    border: 2px solid black;
+    padding-top: 30px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    float: left;
+    position: relative;
+}
+
+.row { 
+    width: 100%;
+}
+
+h1 {
+    text-align: center;
+    padding-bottom: 3px;
+    border-bottom: darkmagenta 10px;
+    
+}
+
+
+#p1 > span {
+    text-align: center;
+    width: 100px;
+    height: 30px;
+    background-color: rgb(146, 236, 236);
+    border: 2px solid black;
+    position: absolute;
+    top: -1px;
+    right: -1px;
+}
+
+
+#p2 > span {
+    text-align: center;
+    width: 100px;
+    height: 30px;
+    background-color: rgb(149, 142, 178);
+    border: 2px solid black;
+    position: absolute;
+    top: -1px;
+    right: -1px;
+}
+
+
+#p3 > span {
+    text-align: center;
+    width: 100px;
+    height: 30px;
+    background-color: rgb(243, 198, 138);
+    border: 2px solid black;
+    position: absolute;
+    top: -1px;
+    right: -1px;
+}
+
+
+/****** Smaller Devices Only ********/
+@media (max-width: 767px) {
+    .row > p {
+       width: auto;
+       float: left;
+       
+   }
+}  
+
+/***** Medium Devices Only ********/
+@media (min-width: 768px) and (max-width: 991px) {
+     #p1 {
+        width: 45%;
+        float: left;
+       
+        left: 20px;
+        
+       
+    }
+    #p3 {
+        clear: left;
+        width: auto;
+       
+    }
+    #p2 {
+        width: 45%;
+        float: right;
+       
+        right: 20px;
+    }
+}
+
+/********** Large Devices Only ************/
+@media (min-width: 992px) {
+    p {
+        width: auto;
+        
+    }
+}
